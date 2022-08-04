@@ -1,6 +1,6 @@
 
 *{
-  background-color: black;
+  background-color: rgb(14, 14, 14);
   box-sizing: border-box;
 }
 .buttons{
@@ -37,7 +37,7 @@ button{
   box-shadow: none;
   border: 1px solid green;
   border-radius: 5px;
-  background-color: black;
+  background-color: rgb(14, 14, 14);
   color:green;
 }
 .reset{
