@@ -4,7 +4,9 @@ function draw(){
 
 const layout = document.querySelector('.layout');
 
-const gridContainer = document.querySelector('.grid-container')
+const gridContainer = document.createElement('div');
+gridContainer.classList.add('grid-container');
+layout.appendChild(gridContainer);
 
 for(let i=0; i<16**2; i++){
   const gridItem = document.createElement('div');
