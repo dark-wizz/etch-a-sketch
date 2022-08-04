@@ -1,7 +1,11 @@
-
 function draw(){
-  this.style.border ='1px solid green'
-  this.style.backgroundColor = 'black';
+  let bg = this.style.backgroundColor.split(',')[1]-100;
+  let r = Math.floor(Math.random()*255);
+  let g = Math.floor(Math.random()*255);
+  let b =Math.floor(Math.random()*255) ;
+  this.style.border =(bg<0)? '1px solid green'
+    :`1px solid rgb(${r},${g}, ${b} )`
+  this.style.backgroundColor = `rgb(${bg},${bg}, ${bg} )`;
 }
 function resetHover(){
   this.style.color='green';
@@ -41,6 +45,7 @@ function play(size){
   for(let i=0; i<size**2; i++){
     const gridItem = document.createElement('div');
     gridItem.classList.add('grid-item');
+    gridItem.style.background='rgb(250, 250, 250)'
     gridContainer.appendChild(gridItem);
   }
   
