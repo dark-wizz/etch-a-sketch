@@ -1,0 +1,23 @@
+*{
+  box-sizing: border-box;
+}
+.layout{
+  display:flex;
+  height:100vh;
+  border: 1px dotted red;
+}
+.grid-container{
+  flex:1;
+  display:grid;
+  grid-template-columns: repeat(16, auto);
+}
+.grid-item{
+  color:rgb(32, 32, 32);
+  border: 1px solid rgb(189, 189, 189);
+  background-color: rgb(220, 220, 220);
+}
+.grid-item::after{
+  content:'';
+  display: block;
+  padding-top: 100%;
+}
